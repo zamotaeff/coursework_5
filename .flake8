@@ -1,0 +1,20 @@
+[flake8]
+ignore = D203,E741
+exclude =
+    # No need to traverse our git directory
+    .git,
+    # There's no value in checking cache directories
+    __pycache__,
+    # No need to traverse our idea directory
+    .idea
+    # No need to traverse our config directory
+    config
+    # No need to traverse our data directory
+    data
+    # No need to traverse our static directory
+    static
+    # No need to traverse our templates directory
+    templates
+    # No need to traverse our virtual enviroment directory
+    venv
+max-complexity = 10
